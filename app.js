@@ -20,4 +20,9 @@ while (parseInt(guess) !== targetNum) {
   }
 }
 
-console.log(`YOU GOT IT! It took You ${attempts} guess/es.`);
+if (guess === "q") {
+  console.log("OK... YOU OUT!");
+} else {
+  console.log("CONGRATS YOU WIN!");
+  console.log(`YOU GOT IT! It took You ${attempts} guess/es.`);
+}
